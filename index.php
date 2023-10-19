@@ -50,6 +50,33 @@
     </header>
     <!-- End Header -->
 
+
+    <section id="file-list" class="file-list">
+        <div class="container" data-aos="fade-up">
+            <div class="section-header">
+                <h2>Archivos en /home/pdf</h2>
+            </div>
+
+            <ul>
+                <?php
+                // Directorio de archivos
+                $directory = '/home/pdf';
+
+                // Obtener la lista de archivos en el directorio
+                $files = scandir($directory);
+
+                // Mostrar los archivos como enlaces
+                foreach ($files as $file) {
+                    if ($file != "." && $file != "..") {
+                        $filePath = $directory . '/' . $file;
+                        echo '<li><a href="' . $filePath . '" target="_blank">' . $file . '</a></li>';
+                    }
+                }
+                ?>
+            </ul>
+        </div>
+    </section>
+
     <!-- ======= Hero Section ======= -->
     <section id="hero" class="hero">
         <div class="info d-flex align-items-center">
