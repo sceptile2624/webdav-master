@@ -60,7 +60,7 @@
             <ul>
                 <?php
                 // Directorio de archivos
-                $directory = '/home/pdf';
+                $directory = '/home/pdf/';
 
                 // Obtener la lista de archivos en el directorio
                 $files = scandir($directory);
@@ -73,7 +73,6 @@
                     }
                 }
                 ?>
-            </ul>
         </div>
     </section>
 
