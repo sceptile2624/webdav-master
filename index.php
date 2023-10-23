@@ -51,12 +51,11 @@
     <!-- End Header -->
 
 
-    <section id="file-list" class="file-list">
+     <section id="file-list" class="file-list">
         <div class="container" data-aos="fade-up">
             <div class="section-header">
                 <h2>Archivos en /home/pdf</h2>
             </div>
-
             <ul>
                 <?php
                 // Directorio de archivos
@@ -73,9 +72,9 @@
                     }
                 }
                 ?>
+            </ul>
         </div>
     </section>
-
     <!-- ======= Hero Section ======= -->
     <section id="hero" class="hero">
         <div class="info d-flex align-items-center">
