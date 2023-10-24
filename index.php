@@ -59,7 +59,7 @@
             <ul>
                 <?php
                 // Directorio de archivos
-                $directory = '/home/pdf/';
+                $directory = 'pdf';
 
                 // Obtener la lista de archivos en el directorio
                 $files = scandir($directory);
